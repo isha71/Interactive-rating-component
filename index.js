@@ -32,6 +32,14 @@ function changeRating() {
     //     document.getElementsByClassName("rating_number")[i].classList.toggle("rating_clicked");
     // }
     document.querySelector(".rating_page").classList.toggle("submit_button_clicked");
+    resetRating();
+}
+
+function resetRating() {
+let arr = [...document.getElementsByClassName("rating_number")];
+arr.map((item) => {
+item.classList.remove("rating_clicked");
+});
 }
 
 
